@@ -1,2 +1,2 @@
-# projectsJS
+# ProjectsJS
  Treino e estudos
