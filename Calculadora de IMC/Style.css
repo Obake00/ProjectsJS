@@ -9,4 +9,20 @@ body{
 
 }
 
+label{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+input{
+    border-radius: 5px;
+    border-style: double;
+    border-color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}

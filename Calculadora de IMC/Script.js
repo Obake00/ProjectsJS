@@ -3,16 +3,18 @@ function calcular(){
     let peso = document.getElementById("peso").value;
     let imc = peso / (altura ** 2); 
 
-    alert("Seu IMC é: " + imc.toFixed(2))
+    // alert(`Seu IMC é ${imc.toFixed(2)}`)
     
     if(imc < 18.5){
-        alert("Você está abaixo do peso")}
+        resultado = "Você está abaixo do peso"}
     else if(imc >= 18.5 && imc <= 25){
-        alert("Você está no peso ideal")}
+        resultado = "Você está no peso ideal"}
     else if(imc > 25 && imc <= 30){
-        alert("Você está com sobre-peso")}
+        resultado = "Você está com SOBRE-PESO"}
     else if(imc > 30 && imc <= 40){
-        alert("Você está com OBESIDADE")}
+        resultado = "Você está com OBESIDADE"}
     else if(imc > 40){
-        alert("Você está com OBESIDADE MORBIDA")}
+        resultado = "Você está com OBESIDADE MÓRBIDA"}
+
+    document.querySelector("p").innerHTML = `Seu IMC é ${imc.toFixed(2)} --> ${resultado}`;
 }
